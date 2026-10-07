@@ -1,25 +1,21 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/kodolabs-hq/.github/main/profile/assets/bonjou-mark.svg" alt="Bonjou logo" width="96" height="96" />
+  <img src="https://raw.githubusercontent.com/kodolabs-hq/.github/main/profile/assets/kodo-labs.png" alt="Kodo Labs logo" width="96" height="96" />
 </p>
 
-# kodolabs
+# Kodo Labs
 
-Home of Bonjou.
+We build practical software for sharing and working with code.
 
-## Bonjou
+## Public projects
 
-Open-source tools for sharing messages, files, and folders with end-to-end
-encryption and approval before file transfers.
-
-| Project | What it contains |
+| Project | What it does |
 | --- | --- |
-| [bonjou-cli](https://github.com/kodolabs-hq/bonjou-cli) | Terminal app for local networks, Go relay, and canonical protocol tests |
-| [bonjou-web](https://github.com/kodolabs-hq/bonjou-web) | Marketing website and browser sharing app |
+| [Bonjou CLI](https://github.com/kodolabs-hq/bonjou-cli) | Local-network chat and encrypted file sharing from the terminal. |
+| [Bonjou Web](https://github.com/kodolabs-hq/bonjou-web) | Bonjou's website and encrypted browser sharing app. |
 
-[Open the web app](https://bonjou.vercel.app/app) ·
-[Install the CLI](https://github.com/kodolabs-hq/bonjou-cli#-installation) ·
-[Read the security model](https://github.com/kodolabs-hq/bonjou-cli/blob/main/docs/security-model.md)
+## Get involved
 
-Both product repositories are public and MIT-licensed. Each builds independently
-and includes its own contribution and agent guidelines. Use the relevant
-repository's private vulnerability-reporting page for security reports.
+Try a project, report a bug, or suggest an improvement in its repository.
+
+For code changes, start with the project's contribution guide. For security
+concerns, follow its security policy.
