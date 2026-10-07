@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<title>Kodo Labs repository preview cards</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;padding:0;width:1280px;height:640px;overflow:hidden;font-family:Arial,Helvetica,sans-serif;color:#111827;background:#f7f8fa}.card{width:1280px;height:640px;padding:76px 80px;position:relative;background:linear-gradient(135deg,#fff,#f2f6f3)}.brand{display:flex;gap:44px;align-items:center}.logo{width:220px;height:220px;object-fit:contain;flex-shrink:0}.content{max-width:850px}h1{font-size:70px;line-height:1.08;letter-spacing:-3px;margin:0 0 26px;font-weight:700}p{font-size:30px;line-height:1.45;margin:0;color:#374151}.footer{position:absolute;left:80px;right:80px;bottom:70px;border-top:1px solid #dbe2df;padding-top:25px;display:flex;justify-content:space-between;color:#4b5563;font-size:22px}.label{font-size:17px;letter-spacing:2px;text-transform:uppercase;color:#46594c;margin-bottom:18px;font-weight:700}.product{background:linear-gradient(135deg,#fff,#fff4f1)}.product .label{color:#b93626}.product .footer{border-color:#ecd8d0}
+</style>
+<div class="card" id="card"><div class="brand"><img class="logo" id="logo" alt=""><div class="content"><div class="label" id="label"></div><h1 id="name"></h1><p id="description"></p></div></div><div class="footer"><span id="address"></span><span id="stack"></span></div></div>
+<script>
+const variant=new URLSearchParams(location.search).get('card')||'org';
+const cards={org:{name:'Kodo Labs',description:'Practical tools for sharing, coding,<br>and working across devices.',logo:'../profile/assets/kodo-labs.png',label:'Kodo Labs',address:'github.com/kodolabs-hq',stack:''},cli:{name:'Bonjou CLI',description:'Local-network chat<br>and encrypted file sharing.',logo:'../profile/assets/bonjou-mark.svg',label:'A Kodo Labs project',address:'github.com/kodolabs-hq/bonjou-cli',stack:'Terminal · Go'},web:{name:'Bonjou Web',description:'Encrypted sharing<br>in your browser.',logo:'../profile/assets/bonjou-mark.svg',label:'A Kodo Labs project',address:'github.com/kodolabs-hq/bonjou-web',stack:'React · TypeScript · WebRTC'}};
+const data=cards[variant]||cards.org;
+if(variant!=='org')document.getElementById('card').classList.add('product');
+document.getElementById('logo').src=data.logo;
+document.getElementById('logo').alt=data.name+' logo';
+for(const key of ['label','name','address','stack'])document.getElementById(key).textContent=data[key];
+document.getElementById('description').innerHTML=data.description;
+</script>
+</html>
